@@ -1,0 +1,15 @@
+.InstallationArticle p + pre {
+  margin-bottom: 1rem;
+}
+
+.InstallationArticle ol li {
+  margin: 1rem;
+}
+
+.InstallationArticle footer {
+  padding: 1rem 0;
+}
+
+.InstallationArticle footer p {
+  margin-bottom: 0.5rem;
+}

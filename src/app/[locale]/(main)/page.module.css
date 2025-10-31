@@ -1,0 +1,44 @@
+.Home {
+  margin: 0 2vw 1rem;
+}
+
+.Hero {
+  min-height: fit-content;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Hero > p {
+  text-align: center;
+  margin: 0.25em;
+}
+
+.HeroButtons {
+  margin-top: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.HeroButtons a {
+  padding: 0 0.75em;
+}
+
+.Home h2 {
+  margin-bottom: 0.125em;
+}
+
+.Home ul li {
+  margin: 0.5rem 0;
+  margin-left: 1rem;
+  list-style: "◈";
+}
+
+.Home ul li p {
+  margin-left: 1rem;
+}

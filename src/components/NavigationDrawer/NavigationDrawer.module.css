@@ -1,0 +1,13 @@
+.DrawerLink {
+  padding-right: 1rem !important;
+}
+
+.DrawerLinkActive {
+  display: flex;
+  align-items: center;
+  color: hsla(var(--fontColorA), 0.8) !important;
+}
+
+.DrawerLinkActive > svg {
+  margin-right: 0.25em;
+}

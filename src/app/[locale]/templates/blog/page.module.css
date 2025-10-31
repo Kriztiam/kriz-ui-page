@@ -1,0 +1,114 @@
+.Template {
+  background-color: hsl(var(--colorBackground));
+  background-image:
+    radial-gradient(
+      circle at 0 20%,
+      hsl(var(--colorPrimary600), 0.2) 0%,
+      transparent 75%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 100% 80%,
+      hsl(var(--colorPrimary700), 0.1) 0%,
+      transparent 75%,
+      transparent 100%
+    );
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  scroll-behavior: smooth;
+}
+
+.Header {
+  margin: 2rem 2vw;
+}
+
+.Header p {
+  color: hsl(var(--fontColor), 0.8);
+}
+
+.Cards {
+  margin: 0 2vw 1rem;
+}
+
+.Cards > div > div:not(:first-child) {
+  padding: 0.5rem;
+}
+
+.Cards > div > div:not(:first-child) > menu {
+  margin-top: 1rem;
+}
+
+.Card {
+  padding: 0 !important;
+}
+
+.Card a {
+  display: flex;
+  flex-direction: column;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Card img {
+  max-width: 100%;
+  aspect-ratio: 2/1;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.Card div {
+  margin-top: 0.25rem;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.Card h2 {
+  font-size: var(--fontSize500);
+}
+
+.Card p {
+  font-size: var(--fontSize300);
+  color: hsl(var(--fontColor), 0.8);
+  margin-bottom: 1rem;
+}
+
+.Card time {
+  margin-top: auto;
+  text-align: right;
+  font-size: var(--fontSize300);
+  color: hsl(var(--fontColor), 0.6);
+}
+
+.Card a:focus-visible {
+  outline: none;
+}
+
+.Card:has(a:focus-visible)::before {
+  background-color: hsl(var(--fontColor)) !important;
+}
+
+.Card a:focus-visible h2 {
+  text-decoration: underline;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .Card:has(a:hover)::before {
+    background-color: hsl(var(--fontColor)) !important;
+  }
+
+  .Card a:hover h2 {
+    text-decoration: underline;
+  }
+}
+
+.Card:has(a:active)::before {
+  background-color: hsl(var(--fontColor), 0.2);
+}
+
+.Card a:active h2 {
+  color: hsl(var(--fontColor), 0.6);
+  text-decoration: underline;
+}

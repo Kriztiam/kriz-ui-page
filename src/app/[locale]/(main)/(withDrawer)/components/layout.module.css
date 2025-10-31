@@ -1,0 +1,7 @@
+.ComponentsLayoutChildren > div > div:has(> pre) {
+  padding: 0 !important;
+}
+
+.ComponentsLayoutChildren > div:not(:last-child) {
+  margin-bottom: 2rem;
+}

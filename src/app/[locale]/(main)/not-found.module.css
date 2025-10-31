@@ -1,0 +1,13 @@
+.NotFoundContainer {
+  padding: 10vh 10vw;
+  width: 100%;
+  height: 100%;
+}
+
+.NotFoundContent > div > p {
+  margin: 0.5em 0;
+}
+
+.NotFoundContent > div > p:last-child {
+  margin-bottom: 1em;
+}

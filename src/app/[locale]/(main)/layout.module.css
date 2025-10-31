@@ -1,0 +1,6 @@
+.Main {
+  flex: 1;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  scroll-behavior: smooth;
+}

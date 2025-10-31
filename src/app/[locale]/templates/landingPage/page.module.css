@@ -1,0 +1,214 @@
+.Template {
+  background:
+    radial-gradient(
+      circle at 0 20%,
+      hsl(var(--colorPrimary400), 0.2) 0%,
+      transparent 75%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 100% 80%,
+      hsl(var(--colorPrimary600), 0.1) 0%,
+      transparent 75%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle,
+      transparent 10%,
+      hsl(var(--colorBackground)) 10%,
+      hsl(var(--colorBackground)) 90%,
+      transparent 90%,
+      transparent
+    ),
+    radial-gradient(
+      circle,
+      transparent 10%,
+      hsl(var(--colorBackground)) 10%,
+      hsl(var(--colorBackground)) 90%,
+      transparent 90%,
+      transparent
+    ),
+    radial-gradient(
+      ellipse at center,
+      transparent 0%,
+      hsl(var(--colorBackground), 0.8) 50%,
+      hsl(var(--colorBackground), 0.8) 100%
+    ),
+    linear-gradient(hsl(var(--fontColorA), 0.1) 0.125rem, transparent 0.125rem)
+      0 -0.0625rem,
+    linear-gradient(
+        90deg,
+        hsl(var(--fontColorA), 0.1) 0.125rem,
+        hsl(var(--colorBackground)) 0.125rem
+      ) -0.0625rem
+      0;
+  background-size:
+    cover,
+    cover,
+    17rem 17rem,
+    17rem 17rem,
+    cover,
+    3rem 3rem,
+    3rem 3rem;
+  background-position: center center;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  scroll-behavior: smooth;
+}
+
+.Template > nav:first-child > div:last-child > button {
+  white-space: nowrap;
+}
+
+.Template > section {
+  scroll-margin-top: 3.5rem;
+}
+
+.Brands,
+.Pricing,
+.GetStarted,
+.FAQ {
+  margin: 25vh 5vw;
+}
+
+.Home {
+  margin: 0 5vw;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Home div:first-child {
+  margin-top: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Home h1 {
+  text-align: center;
+}
+
+.Home p {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  font-size: var(--fontSize500);
+}
+
+.Brands {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.Brands h3 {
+  color: hsl(var(--fontColor), 0.8);
+  font-size: var(--fontSize400);
+  text-transform: uppercase;
+}
+
+.Brands div {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5vw;
+}
+
+.Brands img {
+  filter: brightness(0) invert(var(--invertImagesColor));
+}
+
+.PricingHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.PricingCheckbox {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.PricingCardsContainer {
+  margin: 0 5vw;
+}
+
+.PricingCard {
+  gap: 0.5rem;
+  padding: 1rem 1.25rem;
+}
+
+.PricingCard h2 {
+  display: flex;
+  align-items: center;
+  font-size: var(--fontSize500);
+}
+
+.PricingCard h2 > span:not(:first-child) {
+  margin-left: 0.5rem;
+  font-size: var(--fontSize400);
+}
+
+.PricingCard > div > p {
+  height: 3rem;
+}
+
+.PricingCard > p {
+  font-size: var(--fontSize700);
+}
+
+.PricingCard ul {
+  list-style: square;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.PricingCard button {
+  margin-top: auto;
+}
+
+.FAQ {
+  padding: 0 5vw;
+}
+
+.Brands,
+.GetStarted {
+  background: radial-gradient(
+    hsl(var(--fontColorA), 0.05) 20%,
+    transparent 70%
+  );
+}
+
+.GetStarted {
+  padding: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.GetStarted img {
+  width: 4.5rem;
+  filter: invert(var(--invertImagesColor));
+}
+
+.GetStarted h4 {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.GetStarted p {
+  text-align: center;
+}
+
+.GetStarted button {
+  margin-top: 1rem;
+}

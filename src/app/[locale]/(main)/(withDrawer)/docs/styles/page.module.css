@@ -1,0 +1,43 @@
+.StylesArticle p + pre {
+  margin-bottom: 1rem;
+}
+
+.ColorBoxContainer {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.ColorBoxContainer::before {
+  background-color: hsl(var(--fontColor), 0.2);
+}
+
+.ColorBoxContainer span {
+  width: 100%;
+  aspect-ratio: 1;
+  z-index: -1;
+}
+
+.ColorBoxContainer p {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(var(--colorBackground));
+  font-family: monospace;
+  font-size: var(--fontSize200);
+  font-weight: 600;
+}
+
+.SelectorThemeContainer {
+  margin: 1rem 0;
+}
+
+.StylesArticle footer {
+  padding: 1rem 0;
+}
+
+.StylesArticle footer p {
+  margin-bottom: 0.5rem;
+}

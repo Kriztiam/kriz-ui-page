@@ -1,0 +1,694 @@
+{
+  "Metadata": {
+    "title": "Kriz UI",
+    "description": "Collection of reusable UI components built with React and TypeScript."
+  },
+
+  "NotFound": {
+    "title": "Page not found",
+    "description": "This page could not be found.",
+    "pageNotFound": "Page not found",
+    "descriptionText": "Sorry, we couldn't find the page you were looking for.",
+    "goBackText": "Go back to our homepage and explore from there.",
+    "button": "Go back home"
+  },
+
+  "Common": {
+    "Language": {
+      "language": "Language",
+      "en": "English",
+      "es": "Spanish"
+    }
+  },
+
+  "Navigation": {
+    "installation": "Installation",
+    "styles": "Styles",
+    "components": "Components",
+    "icons": "Icons",
+    "templates": "Templates"
+  },
+
+  "HomePage": {
+    "heroParagraph": "This is a personal project containing a collection of reusable UI components and templates built with React and TypeScript.",
+    "heroParagraph2": "Feel free to explore and integrate them into your own projects.",
+    "heroButtonGetStarted": "Get started",
+    "heroButtonComponents": "Explore components",
+    "heroButtonIcons": "Explore icons",
+    "heroButtonTemplates": "Explore templates",
+    "featuresHeading": "Why Kriz UI?",
+    "featuresElement1": "<strong>Built for Next.js 15+</strong> - full compatibility with the App Router and Server Components.",
+    "featuresElement2": "<strong>Customizable Themes</strong> - easy color and dark mode control with CSS variables.",
+    "featuresElement3": "<strong>Accessible & Responsive</strong> - designed for modern UI standards.",
+    "featuresElement4": "<strong>TypeScript Ready</strong> - full type safety for all components.",
+    "previewHeading": "Components preview"
+  },
+
+  "Docs": {
+    "main": {
+      "installationHeading": "Installation Guide",
+      "installationParagraph": "Follow the steps below to set up <strong>Kriz UI</strong> in your Next.js project.",
+      "installHeading": "1. Install Dependencies",
+      "installParagraph": "To install using npm, run the following command:",
+      "configureHeading": "2. Configure the Root Layout",
+      "configureParagraph": "In your root layout file, import the base styles for the UI. You can also include an optional theme.",
+      "configureStepsParagraph1": "Import the base styles:",
+      "configureStepsParagraph2": "Optionally, import a predefined color theme from the list below:",
+      "configureStepsParagraph3": "Or create your own theme by defining custom color variables:",
+      "configureStepsParagraph4": "Finally, wrap your application with <code>'<'KrizUIContextProvider'>'</code>.",
+      "configureStepsParagraph5": "This context manages dark/light mode and enables dynamic theme color changes across your app.",
+      "configureStepsParagraph6": "If you're using <code>next-intl</code>, you can pass <code>navigation</code> and <code>routing</code> props to integrate your i18n navigation system:",
+      "exampleHeading": "3. Complete Layout Example",
+      "exampleParagraph1": "Here's an example of a fully configured layout file using <code>kriz-ui-next</code> and <code>next-intl</code>:",
+      "nextHeading": "Next steps",
+      "nextParagraph": "Next, learn about the general styles such as typography and the default color palette.",
+      "nextButton": "General styles"
+    },
+
+    "styles": {
+      "heading": "General styles",
+      "headingDescription": "To ensure a cohesive visual experience, <strong>Kriz UI</strong> provides a consistent set of typography styles and a flexible color palette designed for smooth transitions and balanced contrast. The system supports both light and dark themes, maintaining a uniform look across all components.",
+      "typographyHeading": "Typography",
+      "typographyParagraph": "These are the default typography styles applied globally across the library. You can customize them through CSS variables or by overriding the default styles.",
+      "typographyDescription": {
+        "heading": "Heading",
+        "paragraph": "This is a paragraph of text to show the default font styling and line height."
+      },
+      "colorPaletteHeading": "Color Palette",
+      "colorPaletteParagraph": "The color palette is based on CSS variables that define both light and dark theme values. Each variable can be overridden to customize your application's appearance.",
+      "themingHeading": "Theming",
+      "themingParagraph": "<strong>Kriz UI</strong> supports both predefined and custom themes. You can apply a theme globally by importing its stylesheet, or create your own by defining a custom set of color variables. The library also supports automatic dark and light modes.",
+      "themingPredefinedHeading": "Predefined themes",
+      "themingPredefinedParagraph1": "Import one of the built-in color themes in your root layout. For example:",
+      "themingPredefinedParagraph2": "Available themes include:",
+      "themingCustomHeading": "Create a custom theme",
+      "themingCustomParagraph": "To define your own color scheme, create a CSS file that includes your palette variables and import it in your layout. For example:",
+      "themingSwitchHeading": "Dynamic theme switching",
+      "themingSwitchParagraph": "Use the <code>'<'KrizUIContextProvider'>'</code> to handle dark/light mode and dynamically adjust your primary color across the app. The provider ensures consistent palette generation for all UI components.",
+      "nextHeading": "Next steps",
+      "nextParagraph": "Continue to the components section to see how these styles are applied in real UI elements.",
+      "nextButton": "Components"
+    }
+  },
+
+  "Icons": {
+    "heading": "Icons",
+    "headingDescription": "<strong>Kriz UI</strong> includes a collection of clean, scalable SVG icons designed to work seamlessly with all components. You can import any icon individually or use it directly in your project.",
+    "usageHeading": "Usage",
+    "usageParagraph": "Import any icon component from the package and use it like this:",
+    "collectionHeading": "Collection",
+    "collectionParagraph": "Browse all available icons below."
+  },
+
+  "ComponentsPages": {
+    "props": "Props",
+    "prop": "Prop",
+    "types": "Types",
+    "type": "Type",
+    "description": "Description",
+    "examples": "Examples",
+    "example": "Example",
+    "code": "Code",
+
+    "Accordion": {
+      "description": "The Accordion component lets users show and hide sections of related content on a page.",
+      "prop-1": "label: string;",
+      "propDescription-1": "The title displayed in the accordion.",
+      "prop-2": "open?: boolean;",
+      "propDescription-2": "If true, the accordion is open by default, allows for programmatic control, but if omitted, the accordion will rely on native browser toggle behavior.",
+      "prop-3": "groupName?: string;",
+      "propDescription-3": "Optional group name. Useful for grouping accordions.",
+      "prop-4": "color?: string;",
+      "propDescription-4": "Custom color passed as a CSS variable (--color).",
+      "prop-5": "children?: React.ReactNode;",
+      "propDescription-5": "Content to be displayed inside the expanded section."
+    },
+
+    "AnimationLoading": {
+      "description": "A minimal and customizable animated loading indicator component. Designed with CSS animations and styled via CSS Modules, it supports custom size and color through CSS variables.",
+      "prop-1": "size?: string;",
+      "propDescription-1": "Custom size of the loading indicator (e.g., '24px', '2rem'). Passed as --size CSS variable.",
+      "prop-2": "color?: string;",
+      "propDescription-2": "Custom color of the loading indicator (e.g., '#000' 'red'). Passed as --color CSS variable.",
+      "prop-3": "fullScreen?: boolean;",
+      "propDescription-3": "When true, wraps the loader in a centered flex container that fills the viewport or parent container."
+    },
+
+    "AnimationScrollDown": {
+      "description": "A animated 'scroll down' indicator typically placed at the bottom of a hero section or above the fold. Built with pure CSS and React, this component helps guide users to scroll down for more content.",
+      "prop-1": "size?: string;",
+      "propDescription-1": "Controls the size of the scroll indicator (e.g., '24px', '2rem'). Passed as --size CSS variable.",
+      "prop-2": "color?: string;",
+      "propDescription-2": "Custom color of the scroll animation. (e.g., '#000', 'red'). Passed as --color CSS variable."
+    },
+
+    "AnimationText": {
+      "description": "A dynamic text animation component that creates a 'hacker-style' or 'scramble' effect where characters randomly cycle before resolving into their final form. It activates when the text enters the viewport, making it ideal for drawing attention to key content.",
+      "prop-1": "children: string;",
+      "propDescription-1": "The final text to display after the animation. Must be a string.",
+      "prop-2": "speed?: number;",
+      "propDescription-2": "Interval speed in milliseconds for the animation steps (lower = faster).",
+      "prop-3": "triggerOnce?: boolean;",
+      "propDescription-3": "If true, the animation triggers only the first time the text is visible."
+    },
+
+    "AnimationTextGradient": {
+      "description": "AnimationTextGradient is a component that renders its children inside a '<'span'>' with a dynamic, animated text gradient. It allows customization of the gradient colors via props and supports all standard HTML '<'span'>' attributes. This component is ideal for drawing attention to text elements like headings, titles, or calls to action by applying an animated multi-stop gradient to the text.",
+      "prop-1": "children: React.ReactNode;",
+      "propDescription-1": "The content to render inside the animated gradient text.",
+      "prop-2": "gradientBaseColor?: string;",
+      "propDescription-2": "The base color for the animated gradient. (e.g., '#000', 'red'). Passed as a CSS variable.",
+      "prop-3": "gradientAccentColor?: string;",
+      "propDescription-3": "The accent color for the gradient. (e.g., '#000', 'red'). Passed as a CSS variable.",
+      "prop-4": "...props?: React.HTMLAttributes'<'HTMLSpanElement'>';",
+      "propDescription-4": "Any other valid HTML attributes for a '<'span'>'."
+    },
+
+    "Avatar": {
+      "description": "A flexible and lightweight user avatar component that can display: A user image, the first letter of a user's name or a fallback icon with a specified background color or a random background color generated at render time. Includes optional sizing.",
+      "prop-1": "size?: string;",
+      "propDescription-1": "Sets the avatar size (e.g., '40px', '3rem'). Applied via CSS variable --size.",
+      "prop-2": "name?: string;",
+      "propDescription-2": "Full name used to extract the first letter for initials display.",
+      "prop-3": "imgURL?: string;",
+      "propDescription-3": "Image source URL for the avatar.",
+      "prop-4": "color?: string;",
+      "propDescription-4": "Custom background color of the avatar. (e.g., '#000', 'red'). Passed as --color CSS variable."
+    },
+
+    "Breadcrumb": {
+      "description": "A flexible breadcrumb navigation component that supports: Static links, nested menus via dropdown,optional home link with icon.",
+      "prop-1": "homeLink?: NavLink | IconLink;",
+      "propDescription-1": "If provided, the home link is displayed as the first breadcrumb item.",
+      "prop-2": "linksList: (NavLink | NestedLinks)[];",
+      "propDescription-2": "An array of link objects representing the breadcrumb path. Can be a mix of: NavLink for simple links or NestedLinks for dropdown items.",
+      "type-1": "NavLink",
+      "typeDescription-1": "linkText: string; href: string;",
+      "type-2": "IconLink",
+      "typeDescription-2": "linkText: string; href: string; icon?: React.ReactNode;",
+      "type-3": "NestedLinks",
+      "typeDescription-3": "linkText: string; nestedLinks: NavLink[];"
+    },
+
+    "Button": {
+      "description": "A flexible, styled button component that can render either a native '<'button'>' element or a navigational '<'Link'>' element depending on the href prop.",
+      "prop-1": "children: React.ReactNode;",
+      "propDescription-1": "Content inside the button (text, icon, etc.).",
+      "prop-2": "type?: 'button' | 'submit' | 'reset';",
+      "propDescription-2": "Button type, only applies when href is not set.",
+      "prop-3": "onClick?: React.MouseEventHandler;",
+      "propDescription-3": "Function to call on click. Works for both '<'button'>' and '<'Link'>'.",
+      "prop-4": "disabled?: boolean;",
+      "propDescription-4": "Disables the button (only for '<'button'>' mode).",
+      "prop-5": "outline?: boolean;",
+      "propDescription-5": "If true, renders an outlined version of the button.",
+      "prop-6": "href?: string;",
+      "propDescription-6": "If provided, renders a '<'Link'>' instead of '<'button'>'.",
+      "prop-7": "target?: '_blank' | '_self' | '_parent' | '_top' | string;",
+      "propDescription-7": "Specifies where to open the link (only for link mode).",
+      "prop-8": "size?: string;",
+      "propDescription-8": "Custom size passed via CSS variable --size (e.g., '2rem' or '48px').",
+      "prop-9": "color?: string;",
+      "propDescription-9": "Custom color passed via CSS variable --color (e.g., 'blue' or '#333')."
+    },
+
+    "Card": {
+      "description": "A reusable container component used to group content. Commonly used for layouts, dashboards, previews, and UI sections.",
+      "prop-1": "className?: string;",
+      "propDescription-1": "Optional additional class names to customize the card style.",
+      "prop-2": "children?: React.ReactNode;",
+      "propDescription-2": "Content to render inside the card.",
+      "prop-3": "...props?: React.HTMLAttributes'<'HTMLDivElement'>';",
+      "propDescription-3": "Any standard HTML '<'div'>' attributes (e.g. id, style, onClick)."
+    },
+
+    "Divider": {
+      "description": "The Divider component is a customizable horizontal rule ('<'hr'>') used to visually separate content. It supports both a basic and a stylized mode, along with dynamic spacing control via a parentPadding prop.",
+      "prop-1": "parentPadding?: string;",
+      "propDescription-1": "Optional value (e.g. '2rem', '32px') to account for parent padding. Adjusts divider spacing using CSS variable --parentPadding.",
+      "prop-2": "stylized?: boolean;",
+      "propDescription-2": "If true, renders a stylized divider with additional visual elements.",
+      "prop-3": "...props?: React.HTMLAttributes'<'HTMLHRElement'>';",
+      "propDescription-3": "Any standard HTML '<'hr'>' attributes (id, style, className, etc.)."
+    },
+
+    "Drawer": {
+      "description": "A flexible, accessible off-canvas panel (drawer) component that can slide in from the left or right. It supports both modal and non-modal display modes and includes built-in accessibility features like backdrop click and escape key handling. Renders as either: A modal dialog ('<'dialog'>') when setIsOpen is provided or a static sidebar ('<'aside'>') when setIsOpen is not provided.",
+      "prop-1": "isOpen?: boolean;",
+      "propDescription-1": "Controls the visibility of the drawer.",
+      "prop-2": "setIsOpen?: React.Dispatch'<'React.SetStateAction'<'boolean'>>';",
+      "propDescription-2": "Enables interactive mode (modal). Required to close via backdrop or Escape.",
+      "prop-3": "fixed?: boolean;",
+      "propDescription-3": "If true, uses showModal() for fullscreen/fixed positioning.",
+      "prop-4": "fromRight?: boolean;",
+      "propDescription-4": "If true, drawer slides in from the right instead of left.",
+      "prop-5": "children?: React.ReactNode;",
+      "propDescription-5": "Content inside the drawer."
+    },
+
+    "Footer": {
+      "description": "A customizable, responsive website footer component with support for logos, navigation links, extra content areas, and social media integration.",
+      "prop-1": "logoImgSrc: string;",
+      "propDescription-1": "Source URL or path for the footer logo image.",
+      "prop-2": "logoText?: string | React.ReactNode;",
+      "propDescription-2": "Optional text or node displayed next to the logo image.",
+      "prop-3": "logoBelowContent?: React.ReactNode;",
+      "propDescription-3": "Additional content shown beneath the logo (e.g. description, tagline).",
+      "prop-4": "linksList?: NestedLinks[];",
+      "propDescription-4": "Array of grouped navigational links with headings.",
+      "prop-5": "footerBottomContent?: React.ReactNode;",
+      "propDescription-5": "Content rendered at the bottom of the footer (e.g. copyright).",
+      "prop-6": "socialMediaLinks?: IconLink[];",
+      "propDescription-6": "Social media links with optional icons (passed to SocialMediaLinks).",
+      "prop-7": "children?: React.ReactNode;",
+      "propDescription-7": "Injects custom content above the main footer content.",
+      "type-1": "NavLink",
+      "typeDescription-1": "linkText: string; href: string;",
+      "type-2": "IconLink",
+      "typeDescription-2": "linkText: string; href: string; icon?: React.ReactNode;",
+      "type-3": "NestedLinks",
+      "typeDescription-3": "linkText: string; nestedLinks: NavLink[];"
+    },
+
+    "HelperGrid": {
+      "description": "A responsive and flexible CSS Grid layout helper component. It simplifies dynamic grid rendering with customizable column sizing, gap control, and auto-fill behavior for empty space.",
+      "prop-1": "type?: React.ElementType;",
+      "propDescription-1": "The type of element to render (div, section, ul, etc.).",
+      "prop-2": "className?: string;",
+      "propDescription-2": "Additional CSS class names to apply.",
+      "prop-3": "style?: React.CSSProperties;",
+      "propDescription-3": "Inline styles to apply to the root element.",
+      "prop-4": "columnsNumber?: number;",
+      "propDescription-4": "Sets the number of columns in the grid layout.",
+      "prop-5": "columnsMinSize?: string;",
+      "propDescription-5": "Sets the minimum column width. Accepts any valid CSS size unit.",
+      "prop-6": "columnsMaxSize?: string;",
+      "propDescription-6": "Sets the maximum column width. Useful for responsive design.",
+      "prop-7": "fillEmptyColumns?: boolean;",
+      "propDescription-7": "If true, allows the grid to auto-fill available space with empty columns using auto-fit.",
+      "prop-8": "gap?: string;",
+      "propDescription-8": "Spacing between grid items.",
+      "prop-9": "children?: React.ReactNode;",
+      "propDescription-9": "The content to render inside the grid."
+    },
+
+    "HelperSkeleton": {
+      "description": "The HelperSkeleton component renders an animated placeholder used to indicate loading content. It is ideal for simulating text or UI blocks before actual data is loaded, providing a better perceived loading experience. Automatically sizes itself based on provided dimensions or semantic text styles. Fully customizable via props (width, height, color, radius).",
+      "prop-1": "width?: string;",
+      "propDescription-1": "Width of the skeleton placeholder. Any valid CSS unit (px, %, rem).",
+      "prop-2": "height?: string;",
+      "propDescription-2": "Height of the skeleton. Ignored if text is provided.",
+      "prop-3": "radius?: string;",
+      "propDescription-3": "Border radius for rounded edges.",
+      "prop-4": "color?: string;",
+      "propDescription-4": "Background color of the skeleton. Supports CSS variables and raw values.",
+      "prop-5": "text?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p';",
+      "propDescription-5": "Semantic tag to use predefined font-size-based heights."
+    },
+
+    "ImageCarousel": {
+      "description": "A customizable image carousel component. It displays one image at a time from a given array and allows navigation through buttons, dots, and mouse wheel scrolling. Supports next/image optimization via useNextImage prop.",
+      "prop-1": "srcArray: string[];",
+      "propDescription-1": "Array of full-size image URLs.",
+      "prop-2": "altArray?: string[];",
+      "propDescription-2": "Optional array of alt text strings for accessibility.",
+      "prop-3": "thumbnailSrc?: string[];",
+      "propDescription-3": "Optional array of thumbnail image URLs for performance optimization.",
+      "prop-4": "useNextImage?: boolean;",
+      "propDescription-4": "Enables usage of next/image inside ImageViewer (if supported).",
+      "prop-5": "height?: string;",
+      "propDescription-5": "CSS value for height (e.g., '300px', '50vh', 'auto')."
+    },
+
+    "ImageGrid": {
+      "description": "The ImageGrid component displays a responsive grid of images, optionally using thumbnail sources and optimized with next/image.",
+      "prop-1": "srcArray: string[];",
+      "propDescription-1": "Array of image URLs to display.",
+      "prop-2": "altArray?: string[];",
+      "propDescription-2": "Optional array of alt text for each image (accessibility).",
+      "prop-3": "thumbnailSrc?: string[];",
+      "propDescription-3": "Optional array of thumbnails for image previews or lazy loading.",
+      "prop-4": "useNextImage?: boolean;",
+      "propDescription-4": "Enable Next.js next/image optimization via ImageViewer.",
+      "prop-5": "sizeEachImage?: string;",
+      "propDescription-5": "CSS value (e.g., '12rem', '25%', 'auto') to control image size."
+    },
+
+    "ImageViewer": {
+      "description": "The ImageViewer component displays a single image (with optional thumbnail and modal preview). It supports both native HTML '<'img'>' elements and Next.js's optimized '<'Image'>' component. Click-to-zoom image viewer with modal support.",
+      "prop-1": "src: string;",
+      "propDescription-1": "The full image source (used in modal and fallback if no thumbnail).",
+      "prop-2": "alt: string;",
+      "propDescription-2": "Accessible alt text for the image.",
+      "prop-3": "thumbnailSrc?: string;",
+      "propDescription-3": "Optional smaller/lighter version of the image shown before zooming.",
+      "prop-4": "size?: string;",
+      "propDescription-4": "CSS value for setting custom size (e.g., 10rem, 200px).",
+      "prop-5": "useNextImage?: boolean;",
+      "propDescription-5": "Whether to use Next.js '<'Image'>' for optimization and lazy loading."
+    },
+
+    "InputCheckbox": {
+      "description": "The InputCheckbox component is a customizable and accessible checkbox input with optional label and size control via CSS custom properties.",
+      "prop-1": "size?: string;",
+      "propDescription-1": "Sets the size of the checkbox via a CSS variable (--size).",
+      "prop-2": "labelText?: string;",
+      "propDescription-2": "Optional text displayed next to the checkbox.",
+      "prop-3": "...props?: React.InputHTMLAttributes'<'HTMLInputElement'>';",
+      "propDescription-3": "Any standard HTML '<'input type='checkbox' '>' attributes (e.g. id, style, onChange)."
+    },
+
+    "InputColor": {
+      "description": "The InputColor component is a customizable and accessible color input with optional color suggestions via a '<'datalist'>'.",
+      "prop-1": "listOptions?: string[];",
+      "propDescription-1": "An array of color values (hex codes) to be used as options in a datalist.",
+      "prop-2": "listId?: string;",
+      "propDescription-2": "The id attribute to assign to the '<'datalist'>' and link to the input.",
+      "prop-3": "...props?: React.InputHTMLAttributes'<'HTMLInputElement'>';",
+      "propDescription-3": "Any standard HTML '<'input type='color' '>' attributes (e.g. id, style, onChange)."
+    },
+
+    "InputRadio": {
+      "description": "The InputRadio component renders a styled radio input element with an bel. It supports grouping, inline layout, and customization via props and CSS variables.",
+      "prop-1": "id?: string;",
+      "propDescription-1": "The unique identifier for the radio input. Useful for accessibility.",
+      "prop-2": "labelText?: string;",
+      "propDescription-2": "Text label shown next to the radio button. Also used as the inputs value.",
+      "prop-3": "groupName?: string;",
+      "propDescription-3": "The name attribute used to group radio buttons.",
+      "prop-4": "checked?: boolean;",
+      "propDescription-4": "If true, marks the radio as selected (controlled).",
+      "prop-5": "disabled?: boolean;",
+      "propDescription-5": "Disables the radio input.",
+      "prop-6": "inline?: boolean;",
+      "propDescription-6": "If true, displays the radio inline instead of stacked.",
+      "prop-7": "size?: string;",
+      "propDescription-7": "Custom size applied via CSS variable --size."
+    },
+
+    "InputRange": {
+      "description": "A customizable, accessible range input slider component. It allows users to select a numeric value within a specified range and optional prefixes and suffixes for the displayed value. This component is ideal for use cases like adjusting volume, brightness, or other numeric settings.",
+      "prop-1": "labelText?: string;",
+      "propDescription-1": "The text that will be used for the slider label.",
+      "prop-2": "min?: number;",
+      "propDescription-2": "The minimum value of the range slider.",
+      "prop-3": "max?: number;",
+      "propDescription-3": "The maximum value of the range slider.",
+      "prop-4": "initialValue?: number;",
+      "propDescription-4": "The initial value to display on the slider.",
+      "prop-5": "valuePrefix?: string;",
+      "propDescription-5": "A string that will be prepended to the displayed value.",
+      "prop-6": "valueSuffix?: string;",
+      "propDescription-6": "A string that will be appended to the displayed value.",
+      "prop-7": "...props",
+      "propDescription-7": "You can pass any standard HTML input attributes like step, onChange, style, etc."
+    },
+
+    "InputRangeDual": {
+      "description": "The InputRangeDual component is a dual-thumb range slider used to select a minimum and maximum numeric value within a defined range. It includes optional prefixes and suffixes for the displayed values. It is useful for filters (e.g., price, distance, ratings) or any interface where a bounded numeric range is needed.",
+      "prop-1": "labelText?: string;",
+      "propDescription-1": "The text that will be used for the slider label.",
+      "prop-2": "id?: string;",
+      "propDescription-2": "The id attribute for the input elements. If not provided, a unique id is generated using useId().",
+      "prop-3": "min?: number;",
+      "propDescription-3": "The minimum value of the range slider.",
+      "prop-4": "max?: number;",
+      "propDescription-4": "The maximum value of the range slider.",
+      "prop-5": "step?: number;",
+      "propDescription-5": "The step value that determines the increments of the range input.",
+      "prop-6": "initialValueMin?: number;",
+      "propDescription-6": "Initial value for the left (minimum) slider.",
+      "prop-7": "initialValueMax?: number;",
+      "propDescription-7": "Initial value for the right (maximum) slider.",
+      "prop-8": "valuePrefix?: string;",
+      "propDescription-8": "A string that will be prepended to the displayed values.",
+      "prop-9": "valueSuffix?: string;",
+      "propDescription-9": "A string that will be appended to the displayed values."
+    },
+
+    "InputSelect": {
+      "description": "A customizable '<'select'>' dropdown with optional grouping and disabled options support.",
+      "prop-1": "id?: string;",
+      "propDescription-1": "Unique identifier for the '<'select'>' element and label association.",
+      "prop-2": "labelText?: string;",
+      "propDescription-2": "Text for the associated label element.",
+      "prop-3": "options: string[];",
+      "propDescription-3": "Array of option strings to be displayed in the dropdown.",
+      "prop-4": "optionsGroups?: boolean;",
+      "propDescription-4": "Whether to group options by their initial letter (true to enable).",
+      "prop-5": "defaultSelected?: string;",
+      "propDescription-5": "The option value that should be selected initially.",
+      "prop-6": "disabledElements?: string[];",
+      "propDescription-6": "Array of option strings that should be disabled in the dropdown.",
+      "prop-7": "disabledText?: string;",
+      "propDescription-7": "Text appended after disabled options to indicate unavailability.",
+      "prop-8": "onChange?: React.Dispatch'<'React.SetStateAction'<'string'>>';",
+      "propDescription-8": "Callback function triggered when the selected option changes; receives the selected value as an argument."
+    },
+
+    "InputSelectMultiple": {
+      "description": "A dynamic, searchable, multi-select dropdown input component with filtering, accessibility support, and optional disabling of specific items.",
+      "prop-1": "labelText?: string;",
+      "propDescription-1": "Label text for the input field.",
+      "prop-2": "options: string[];",
+      "propDescription-2": "Array of all selectable option strings.",
+      "prop-3": "defaultSelected?: string[];",
+      "propDescription-3": "Initial list of selected options.",
+      "prop-4": "disabledElements?: string[];",
+      "propDescription-4": "List of options to be disabled in the selection list.",
+      "prop-5": "disabledText?: string;",
+      "propDescription-5": "Text appended to disabled options to indicate unavailability.",
+      "prop-6": "onChange?: React.Dispatch'<'React.SetStateAction'<'string[]'>>';",
+      "propDescription-6": "Callback function called when selection changes, passing the array of selected values."
+    },
+
+    "InputText": {
+      "description": "A customizable and accessible text input component for various input types (e.g., text, password, email, number, etc.), with built-in support for icons, password toggling, and number stepper buttons.",
+      "prop-1": "type?: 'text' | 'search' | 'email' | 'password' | 'number' | 'date' | 'datetime-local' | 'month' | 'time' | 'week';",
+      "propDescription-1": "Type of the input field. Controls behavior and associated icons.",
+      "prop-2": "id?: string;",
+      "propDescription-2": "Unique identifier for the input and associated label.",
+      "prop-3": "labelText?: string;",
+      "propDescription-3": "Text to display as the input label. Defaults to the id if not provided.",
+      "prop-4": "defaultValue?: string;",
+      "propDescription-4": "Initial value of the input field.",
+      "prop-5": "onChange?: React.Dispatch'<'React.SetStateAction'<'string'>>';",
+      "propDescription-5": "Callback fired when the input value changes. Returns the new value.",
+      "prop-6": "autoFocus?: boolean;",
+      "propDescription-6": "If true, the input will be automatically focused when rendered."
+    },
+
+    "Login": {
+      "description": "A tabbed login and registration form component built with reusable UI components. It allows users to switch between 'Login' and 'Register' tabs and provides customizable text labels for maximum flexibility and localization.",
+      "prop-1": "textLogin?: string;",
+      "propDescription-1": "Tab label and heading for the login form.",
+      "prop-2": "textRegister?: string;",
+      "propDescription-2": "Tab label and heading for the registration form.",
+      "prop-3": "textFullName?: string;",
+      "propDescription-3": "Label for the full name input in registration.",
+      "prop-4": "textEmail?: string;",
+      "propDescription-4": "Label for the email input.",
+      "prop-5": "textPassword?: string;",
+      "propDescription-5": "Label for the password input.",
+      "prop-6": "textVerifyPassword?: string;",
+      "propDescription-6": "Label for the password confirmation field.",
+      "prop-7": "textForgotPassword?: string;",
+      "propDescription-7": "Text for the 'forgot password' link.",
+      "prop-8": "textRememberMe?: string;",
+      "propDescription-8": "Label for the 'remember me' checkbox.",
+      "prop-9": "textLoginButton?: string;",
+      "propDescription-9": "Text displayed on the login form submit button.",
+      "prop-10": "textRegisterButton?: string;",
+      "propDescription-10": "Text displayed on the registration form submit button.",
+      "prop-11": "hrefForgotPassword?: string;",
+      "propDescription-11": "The URL for the forgot password link in the login form."
+    },
+
+    "Menu": {
+      "description": "The Menu component provides an accessible, stylized dropdown menu (with optional submenu support via SubMenu). It supports dynamic positioning, keyboard interactions, and customizable dimensions, making it ideal for action menus, settings panels, or contextual UI.",
+      "prop-1": "label?: React.ReactNode | string;",
+      "propDescription-1": "Label displayed in the menu trigger ('<'summary'>' element).",
+      "prop-2": "children?: React.ReactNode;",
+      "propDescription-2": "Content rendered inside the dropdown (typically '<'li'>' items or SubMenu).",
+      "prop-3": "menuWidth?: string;",
+      "propDescription-3": "CSS width for the dropdown menu (e.g., '200px' or '100%').",
+      "prop-4": "menuMaxHeight?: string;",
+      "propDescription-4": "CSS max height of the dropdown; overflow is scrollable.",
+      "prop-5": "asText?: boolean;",
+      "propDescription-5": "If true, makes the menu trigger appear as plain text instead of a button."
+    },
+
+    "SubMenu": {
+      "prop-1": "label?: React.ReactNode | string;",
+      "propDescription-1": "Label shown in the submenu's trigger ('<'summary'>' element).",
+      "prop-2": "children?: React.ReactNode;",
+      "propDescription-2": "Content rendered inside the submenu (nested items)."
+    },
+
+    "Modal": {
+      "description": "The Modal component provides a controlled, accessible modal dialog using the native '<'dialog'>' HTML element. It includes support for keyboard interactions, click-outside-to-close functionality, and custom content passed via children.",
+      "prop-1": "isOpen?: boolean;",
+      "propDescription-1": "Controls whether the modal is shown (true) or hidden (false).",
+      "prop-2": "setIsOpen?: React.Dispatch'<'React.SetStateAction'<'boolean'>>';",
+      "propDescription-2": "Function to toggle the modal state (used to close the modal).",
+      "prop-3": "children?: React.ReactNode;",
+      "propDescription-3": "Content to be displayed inside the modal."
+    },
+
+    "NavigationBar": {
+      "description": "The NavigationBar is a responsive, dynamic, and highly customizable top navigation component for your application. It supports nested menus, overflow handling, scroll-based styling, and mobile responsiveness via a drawer menu.",
+      "prop-1": "logoSrc: string;",
+      "propDescription-1": "Image source URL for the logo.",
+      "prop-2": "logoText?: string | React.ReactNode;",
+      "propDescription-2": "Text or component to display next to the logo.",
+      "prop-3": "linksList?: (NavLink | NestedLinks)[];",
+      "propDescription-3": "List of main navigation links (can be flat or nested).",
+      "prop-4": "className?: string;",
+      "propDescription-4": "Additional CSS class for the outer '<'nav'>' element.",
+      "prop-5": "childrenLeft?: React.ReactNode;",
+      "propDescription-5": "Optional left-aligned custom content.",
+      "prop-6": "children?: React.ReactNode;",
+      "propDescription-6": "Optional right-aligned custom content (e.g., user profile, language switch).",
+      "type-1": "NavLink",
+      "typeDescription-1": "linkText: string; href: string;",
+      "type-2": "NestedLinks",
+      "typeDescription-2": "linkText: string; nestedLinks: NavLink[];"
+    },
+
+    "NavigationBarBottom": {
+      "description": "The NavigationBarBottom component renders a responsive, mobile-friendly bottom navigation bar, ideal for compact layouts and mobile-first designs. It includes support for primary icon-based links, a toggleable menu drawer for additional links or custom content, and dynamic overflow handling for adaptive UIs.",
+      "prop-1": "logoSrc: string;",
+      "propDescription-1": "Path or URL to the logo image.",
+      "prop-2": "linksInBar?: IconLink[];",
+      "propDescription-2": "Primary bottom navigation links with optional icons.",
+      "prop-3": "showIconLabel?: boolean;",
+      "propDescription-3": "If true, displays the link text under the icon.",
+      "prop-4": "linksList?: (NavLink | NestedLinks)[];",
+      "propDescription-4": "Additional links displayed in the drawer menu.",
+      "prop-5": "className?: string;",
+      "propDescription-5": "Optional additional class for the '<'nav'>' container.",
+      "prop-6": "children?: React.ReactNode;",
+      "propDescription-6": "Extra custom content to include inside the drawer.",
+      "type-1": "NavLink",
+      "typeDescription-1": "linkText: string; href: string;",
+      "type-2": "IconLink",
+      "typeDescription-2": "string; href: string; icon?: React.ReactNode;",
+      "type-3": "NestedLinks",
+      "typeDescription-3": "linkText: string; nestedLinks: NavLink[];"
+    },
+
+    "Notification": {
+      "description": "The Notification component is a temporary toast-like alert designed to show feedback messages to users, with automatic dismiss behavior and customizable styles, positions, and types. It supports different notification types (e.g., success, error), dynamic visibility based on open, and auto-dismiss logic based on message length or a custom timeout.",
+      "prop-1": "type?: 'normal' | 'info' | 'success' | 'warning' | 'error';",
+      "propDescription-1": "Type of the notification, affects icon and color.",
+      "prop-2": "message?: string;",
+      "propDescription-2": "Text content of the notification.",
+      "prop-3": "open?: boolean;",
+      "propDescription-3": "Whether the notification is visible.",
+      "prop-4": "setOpen?: React.Dispatch'<'React.SetStateAction'<'boolean'>>';",
+      "propDescription-4": "Function to control open state (used for auto-dismiss).",
+      "prop-5": "visibleTime?: number;",
+      "propDescription-5": "Time in ms the notification remains visible before auto-dismiss (max 10s).",
+      "prop-6": "fromBottom?: boolean;",
+      "propDescription-6": "If true, shows the notification near the bottom of the screen.",
+      "prop-7": "position?: 'left' | 'center' | 'right';",
+      "propDescription-7": "Horizontal alignment of the notification.",
+      "prop-8": "size?: string;",
+      "propDescription-8": "Optional custom size applied via the --size CSS variable."
+    },
+
+    "NotificationCard": {
+      "description": "The NotificationCard component displays a styled notification panel with configurable type, title, and content. It supports multiple notification states (info, success, warning, error, normal) and can be rendered as a fullscreen overlay or inline card.",
+      "prop-1": "type?: 'normal' | 'info' | 'success' | 'warning' | 'error';",
+      "propDescription-1": "Type of the notification, affects icon and color.",
+      "prop-2": "notificationTypeLabel?: string;",
+      "propDescription-2": "Optional label text to replace the default type label (e.g., “Error”, “Warning”).",
+      "prop-3": "notificationTitle?: string;",
+      "propDescription-3": "Title displayed in the header, rendered with AnimationText.",
+      "prop-4": "fullScreen?: boolean;",
+      "propDescription-4": "If true, expands the card to occupy the full viewport.",
+      "prop-5": "children?: React.ReactNode;",
+      "propDescription-5": "Content displayed inside the card body.",
+      "prop-6": "...props",
+      "propDescription-6": "Any extra HTML attributes to pass to the content container."
+    },
+
+    "Pagination": {
+      "description": "The Pagination component dynamically renders a responsive pagination control that automatically adjusts the number of visible page buttons based on the container's width. It supports first/last navigation buttons, next/previous arrows, and emits the current page number through a callback. It is optimized to prevent flickering, dynamically recalculates layout on window resize, and displays a loading animation until the layout is ready.",
+      "prop-1": "maxPages?: number;",
+      "propDescription-1": "The total number of available pages. Determines the upper limit of pagination buttons.",
+      "prop-2": "defaultPage?: number;",
+      "propDescription-2": "The initially selected page. If greater than maxPages, it defaults to 1.",
+      "prop-3": "hideNextButton?: boolean;",
+      "propDescription-3": "If true, hides the previous and next arrow buttons.",
+      "prop-4": "hideLastButton?: boolean;",
+      "propDescription-4": "If true, hides the first and last navigation buttons.",
+      "prop-5": "size?: string;",
+      "propDescription-5": "Optional size (used as --size CSS variable for styling).",
+      "prop-6": "getCurrentPage?: React.Dispatch'<'React.SetStateAction'<'number'>>';",
+      "propDescription-6": "Callback invoked whenever the selected page changes, passing the new page number to the parent."
+    },
+
+    "SelectorLanguage": {
+      "description": "SelectorLanguage is a language selector component built for use in a Next.js internationalized (i18n) application using next-intl and custom i18n routing utilities. It renders a list where you can select one of the available locales, allowing the user to switch between languages dynamically while preserving the current route."
+    },
+
+    "SelectorTheme": {
+      "description": "SelectorTheme is a component that allows users to switch between dark and light themes, and optionally customize the primary theme color using a color input.",
+      "prop-1": "customColor?: boolean;",
+      "propDescription-1": "If true, displays a color input for custom theme color selection."
+    },
+
+    "SocialMediaLinks": {
+      "description": "SocialMediaLinks is a versatile navigation component designed to display a list of social media links. It supports rendering both icons and text labels, with options to show or hide text and arrange links vertically or horizontally.",
+      "prop-1": "socialMediaLinks: IconLink[];",
+      "propDescription-1": "Array of social media link objects, each containing linkText, href, and optionally an icon.",
+      "prop-2": "showText?: boolean;",
+      "propDescription-2": "When true, always shows the text label next to the icon. When false or omitted, text shows only if icon is missing.",
+      "prop-3": "vertical?: boolean;",
+      "propDescription-3": "When true, arranges links vertically. Otherwise, arranged horizontally.",
+      "type-1": "IconLink",
+      "typeDescription-1": "linkText: string; href: string; icon?: React.ReactNode;"
+    },
+
+    "Table": {
+      "description": "Table is a flexible and feature-rich component designed to display tabular data with sorting, filtering, row selection, and optional row editing/deleting capabilities. It supports dense and checkbox selection modes, and integrates search filtering.",
+      "prop-1": "tableData: '{' id?: string | number; [key: string]: any '}'[];",
+      "propDescription-1": "Array of objects representing rows. To use checkboxSelection, rowEditFunction and rowDeleteFunction you need to provide an unique id to each object.",
+      "prop-2": "tableHeadLabels?: string[];",
+      "propDescription-2": "The labels for each column header of the table. If not provided it uses the keys name of the object by default.",
+      "prop-3": "denseTable?: boolean;",
+      "propDescription-3": "When true, applies a compact styling to the table.",
+      "prop-4": "searchTerm?: string;",
+      "propDescription-4": "Filters rows to those containing the search term in any cell (case-insensitive).",
+      "prop-5": "checkboxSelection?: boolean;",
+      "propDescription-5": "When true, enables checkboxes for selecting individual rows and all rows.",
+      "prop-6": "setSelectedTableRows?: React.Dispatch'<'React.SetStateAction'<'(string | number)[] | null'>>';",
+      "propDescription-6": "State setter to receive the array of currently selected row IDs when checkbox selection is enabled.",
+      "prop-7": "rowEditFunction?: (id: string | number) => void | any;",
+      "propDescription-7": "Callback executed when the edit button on a row is clicked. Receives the row id.",
+      "prop-8": "rowDeleteFunction?: (id: string | number) => void | any;",
+      "propDescription-8": "Callback executed when the delete button on a row is clicked. Receives the row id."
+    },
+
+    "Tabs": {
+      "description": "The Tabs component is a flexible UI component used to display multiple sections of content, where only one section (tab) is visible at a time. It allows users to switch between different content panels using a tabbed interface.",
+      "prop-1": "tabsNames: string[];",
+      "propDescription-1": "An array of strings representing the names of the tabs. Each string corresponds to a tab button.",
+      "prop-2": "tabsContent: React.ReactNode[];",
+      "propDescription-2": "An array of React nodes (e.g., JSX elements, strings, components) representing the content for each tab.",
+      "prop-3": "fillEmptySpace?: boolean;",
+      "propDescription-3": "If true, tab buttons expand to fill the horizontal space (auto-fit).",
+      "prop-4": "simpleStyle?: boolean;",
+      "propDescription-4": "If true, disables background styles for a minimalistic appearance."
+    },
+
+    "Tooltip": {
+      "description": "Tooltip is a UI component that provides additional information when a user hovers over an element. It displays a small popup with text, dynamically adjusting its position based on the mouse pointer's location on the screen. The tooltip appears when the user hovers over the wrapped children element.",
+      "prop-1": "tooltipText: string;",
+      "propDescription-1": "The text to display inside the tooltip. This can be any string of text that provides additional information.",
+      "prop-2": "children: React.ReactNode;",
+      "propDescription-2": "The child element(s) wrapped by the tooltip. The tooltip will be shown when hovering over these elements."
+    }
+  }
+}

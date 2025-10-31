@@ -1,0 +1,13 @@
+.NavigationDesktop {
+  display: none !important;
+}
+
+@media (--mediaTablet) {
+  .NavigationDesktop {
+    display: grid !important;
+  }
+
+  .NavigationMobile {
+    display: none;
+  }
+}
